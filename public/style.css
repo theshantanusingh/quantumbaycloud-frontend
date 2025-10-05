@@ -20,10 +20,34 @@ h1, h2, h3, h4, h5, h6 {
     color: #111827;
 }
 
-h1 { font-weight: 300; }
-h2 { font-weight: 300; }
-h3 { font-weight: 400; }
-h4 { font-weight: 400; }
+h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: -0.025em;
+}
+h2 {
+    font-weight: 500;
+    font-size: 2.25rem;
+    letter-spacing: -0.02em;
+}
+h3 {
+    font-weight: 500;
+    font-size: 1.875rem;
+    letter-spacing: -0.015em;
+}
+h4 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+}
+h5 {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+h6 {
+    font-weight: 400;
+    font-size: 1.125rem;
+}
 
 .container {
     max-width: 1200px;
@@ -173,8 +197,8 @@ h4 { font-weight: 400; }
 }
 
 .hero-title {
-    font-size: 48px;
-    font-weight: 200;
+    font-size: 3.5rem;
+    font-weight: 600;
     line-height: 1.1;
     margin-bottom: 24px;
     color: #111827;
@@ -521,8 +545,8 @@ h4 { font-weight: 400; }
 }
 
 .section-header h2 {
-    font-size: 36px;
-    font-weight: 200;
+    font-size: 2.5rem;
+    font-weight: 500;
     margin-bottom: 16px;
     color: #111827;
     letter-spacing: -0.025em;
@@ -939,8 +963,8 @@ input:checked + .slider:before {
 }
 
 .cta-content h2 {
-    font-size: 36px;
-    font-weight: 200;
+    font-size: 2.5rem;
+    font-weight: 500;
     margin-bottom: 16px;
     color: #111827;
     letter-spacing: -0.025em;
@@ -991,8 +1015,10 @@ input:checked + .slider:before {
 
 .footer-section h4 {
     color: #111827;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 20px;
+    font-size: 1.125rem;
+    letter-spacing: -0.005em;
 }
 
 .footer-section a {
@@ -1074,7 +1100,7 @@ input:checked + .slider:before {
     }
 
     .hero-title {
-        font-size: 40px;
+        font-size: 2.75rem;
     }
 
     .control-panel {
@@ -1124,38 +1150,33 @@ input:checked + .slider:before {
     }
     
     .hero-title {
-        font-size: 32px;
+        font-size: 2.25rem;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
-    .hero-features {
-        justify-content: center;
-        gap: 16px;
-    }
-    
+
     .control-panel {
         max-width: 100%;
     }
-    
+
     .panel-nav {
         padding: 8px 0;
     }
-    
+
     .nav-item {
         padding: 6px 16px;
         font-size: 13px;
     }
-    
+
     .panel-content {
         padding: 16px;
     }
-    
+
     .section-header h2 {
-        font-size: 28px;
+        font-size: 2rem;
     }
     
     .services-grid {
@@ -1193,7 +1214,7 @@ input:checked + .slider:before {
     }
     
     .cta-content h2 {
-        font-size: 28px;
+        font-size: 2rem;
     }
     
     .container {
