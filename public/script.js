@@ -1,14 +1,4 @@
 // Same JavaScript code as the previous version
-// Mobile Navigation
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-
-if (hamburger) {
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active');
-    });
-}
 
 // Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -65,44 +55,7 @@ document.querySelectorAll('.action-btn').forEach(btn => {
     });
 });
 
-// Progress Bar Animation
-function animateProgressBars() {
-    const progressBars = document.querySelectorAll('.progress-bar');
-    progressBars.forEach(bar => {
-        const targetWidth = bar.style.width;
-        bar.style.width = '0%';
-        setTimeout(() => {
-            bar.style.width = targetWidth;
-        }, 500);
-    });
-}
-
-// Intersection Observer for Animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-            
-            if (entry.target.classList.contains('control-panel')) {
-                setTimeout(animateProgressBars, 800);
-            }
-        }
-    });
-}, observerOptions);
-
-// Observe elements for animation
-document.querySelectorAll('.service-card, .feature-item, .pricing-card, .control-panel').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'all 0.6s ease-out';
-    observer.observe(el);
-});
+// Simplified - removed annoying animations
 
 // Button Click Handlers
 document.querySelectorAll('.btn-primary, .btn-secondary, .btn-outline').forEach(btn => {
@@ -205,6 +158,7 @@ function showNotification(message, type = 'info') {
     }, 3000);
 }
 
+
 // Initialize animations on page load
 document.addEventListener('DOMContentLoaded', () => {
     const heroElements = document.querySelectorAll('.hero-content > *');
@@ -212,12 +166,12 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'all 0.6s ease-out';
-        
+
         setTimeout(() => {
             el.style.opacity = '1';
             el.style.transform = 'translateY(0)';
         }, index * 100);
     });
-    
+
     console.log('QuantumBayCloud landing page loaded successfully! 🚀');
 });
